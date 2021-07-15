@@ -77,7 +77,7 @@ for episode in range(MAX_EPISODES):      # 进行每一回合的训练学习
         action = dqn.choose_action(state_light)
         #print(action)
         light_duration = [0,0,0,0,0,0,0,0,0,0,0,0]
-        light_duration[action*3] = 15
+        light_duration[action*3] = 20
         light_duration[action*3+1] = 2
         light_duration[action*3+2] = 3
 
